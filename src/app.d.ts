@@ -1,3 +1,5 @@
+/* eslint no-var: 0 */
+
 import type { PrismaClient } from '@prisma/client';
 
 declare global {
@@ -11,7 +13,7 @@ declare global {
 		// interface PageData {}
 		// interface Platform {}
 	}
-	let __prisma: PrismaClient;
+	var prisma: PrismaClient;
 
 	/// <reference types="lucia-auth"
 	declare namespace Lucia {
