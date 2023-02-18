@@ -22,6 +22,7 @@
 					<li><a href="/login" role="button">Login</a></li>
 				{:else}
 					<li><button formaction="/logout" type="submit"> Logout</button></li>
+					<li><a href="/new">Create new</a></li>
 				{/if}
 			</form>
 		</ul>
