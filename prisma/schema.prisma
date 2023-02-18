@@ -10,7 +10,7 @@ datasource db {
 
 model Article {
   id      String   @id @unique
-  author  String
+  title   String   @default("untitled")
   date    DateTime @default(now())
   content String
   User    User     @relation(fields: [userId], references: [id])
