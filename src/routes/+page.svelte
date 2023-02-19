@@ -9,9 +9,7 @@
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-{#if data.user}
-	<h2>Articles:</h2>
-	{#each articles as aritcle}
-		<p>{aritcle.content}</p>
-	{/each}
-{/if}
+<h2>Latest articles:</h2>
+{#each articles as aritcle}
+	<p>{aritcle.content}</p>
+{/each}
