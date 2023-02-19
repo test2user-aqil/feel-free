@@ -11,5 +11,5 @@
 
 <h2>Latest articles:</h2>
 {#each articles as aritcle}
-	<p>{aritcle.content}</p>
+	<p><a href={`/a/${aritcle.id}`}>{aritcle.title}</a></p>
 {/each}
