@@ -13,12 +13,12 @@
 			<a href="/" class="font-semibold"> Feel-Free </a>
 		</h1>
 		<ul>
-			<form method="POST" class="flex flex-row md:gap-4 gap-2">
+			<form method="POST" class="flex flex-row md:gap-4 gap-2 items-center">
 				{#if !data.user}
-					<li><a href="/login" role="button">Login</a></li>
+					<li><a href="/login" role="button" class="btn-secondary">Login</a></li>
 					<li><a href="/register" class="btn-primary">Register</a></li>
 				{:else}
-					<li><button formaction="/logout" type="submit"> Logout</button></li>
+					<li><button formaction="/logout" type="submit" class="btn-secondary"> Logout</button></li>
 					<li>
 						<a href="/new" class="btn-primary">Create New</a>
 					</li>
