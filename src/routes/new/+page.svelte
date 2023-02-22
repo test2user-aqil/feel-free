@@ -4,7 +4,9 @@
 	<input type="text" id="id" name="id" />
 	<label for="title"> Title </label>
 	<input type="text" id="title" name="title" />
-	<label for="title"> Content </label>
+	<label for="description"> Description </label>
+	<input type="text" id="description" name="description" />
+	<label for="content"> Content </label>
 	<textarea id="content" name="content" rows={5} />
 	<button type="submit">Publish Article</button>
 </form>

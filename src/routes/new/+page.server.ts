@@ -9,10 +9,9 @@ export const actions: Actions = {
 			throw redirect(302, '/');
 		}
 
-		const { id, title, content } = Object.fromEntries(await request.formData()) as Record<
-			string,
-			string
-		>;
+		const { id, title, content, description } = Object.fromEntries(
+			await request.formData()
+		) as Record<string, string>;
 
 		try {
 			await prisma.article.create({
@@ -20,6 +19,7 @@ export const actions: Actions = {
 					id,
 					title,
 					content,
+					description,
 					userId: user.userId
 				}
 			});

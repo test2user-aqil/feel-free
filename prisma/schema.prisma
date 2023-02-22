@@ -9,12 +9,13 @@ datasource db {
 }
 
 model Article {
-  id      String   @id @unique
-  title   String   @default("untitled")
-  date    DateTime @default(now())
-  content String   @db.VarChar(4047)
-  User    User     @relation(fields: [userId], references: [id])
-  userId  String
+  id          String   @id @unique
+  title       String   @default("untitled")
+  date        DateTime @default(now())
+  content     String   @db.VarChar(4047)
+  description String   @default("") @db.VarChar(127)
+  User        User     @relation(fields: [userId], references: [id])
+  userId      String
 
   @@index([userId])
 }
