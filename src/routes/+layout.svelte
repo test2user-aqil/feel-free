@@ -26,5 +26,9 @@
 			</form>
 		</ul>
 	</nav>
-	<slot />
+	<div>
+		<main class="max-w-4xl mx-auto flex flex-col gap-2">
+			<slot />
+		</main>
+	</div>
 </div>
