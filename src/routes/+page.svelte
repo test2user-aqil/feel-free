@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import ArticleCard from '$lib/components/ArticleCard.svelte';
 
 	export let data: PageData;
 	let articles = data.articles;
@@ -15,9 +16,12 @@
 <div>
 	<h2>Latest articles:</h2>
 	{#each articles as article}
-		<p>
-			<a href={`/a/${article.id}`}>{article.title}</a> by
-			<a href={`/u/${article.User.username}`}>{article.User.name}</a>
-		</p>
+		<ArticleCard
+			author={article.User.name}
+			username={article.User.username}
+			id={article.id}
+			title={article.title}
+			date={article.date}
+		/>
 	{/each}
 </div>
