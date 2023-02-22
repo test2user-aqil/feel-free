@@ -2,8 +2,22 @@ import type { PageServerLoad } from './$types';
 import { prisma } from '$lib/server/prisma';
 
 export const load: PageServerLoad = async ({ locals }) => {
-	const { user, session } = await locals.validateUser();
+
+	const articles = await prisma.article.findMany({
+		select: {
+			id: true,
+			title: true,
+			date: true,
+			User: {
+				select: {
+					name: true,
+					username: true
+				}
+			}
+		}
+	});
+
 	return {
-		articles: await prisma.article.findMany()
+		articles: articles
 	};
 };
