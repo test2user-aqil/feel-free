@@ -4,7 +4,7 @@
 
 @layer components {
 	.btn-primary {
-		@apply px-4 py-2 bg-sky-500 hover:bg-sky-400 border-[1px] border-white/10 rounded-lg font-semibold text-sm;
+		@apply px-4 py-2 bg-sky-500 hover:bg-sky-400 border border-white/10 rounded-lg font-semibold text-sm;
 	}
 
 	.btn-secondary {

@@ -7,7 +7,7 @@
 
 <div>
 	<nav
-		class="w-full h-14 flex justify-between items-center p-3 md:px-14 bg-neutral-900 text-slate-200 border-b-[1px] border-b-indigo-500"
+		class="w-full h-14 flex justify-between items-center p-3 md:px-14 bg-neutral-900 text-slate-200 border-b border-b-indigo-500"
 	>
 		<h1>
 			<a href="/" class="font-semibold"> Feel-Free </a>

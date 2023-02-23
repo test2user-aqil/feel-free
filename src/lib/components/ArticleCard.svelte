@@ -16,7 +16,7 @@
 		{description ? description : ''}
 	</p>
 
-	<div class="border-t-[1px] border-white/20 py-2 px-4 flex justify-between">
+	<div class="border-t border-white/20 py-2 px-4 flex justify-between">
 		<p>{date.toLocaleString()}</p>
 		<a href={`/u/${username}`}>{author}</a>
 	</div>
