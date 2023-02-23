@@ -1,8 +1,11 @@
 import type { PageServerLoad } from './$types';
 import { prisma } from '$lib/server/prisma';
 
-export const load: PageServerLoad = async ({ locals }) => {
+export const load: PageServerLoad = async () => {
 	const articles = await prisma.article.findMany({
+		orderBy: {
+			date: 'desc'
+		},
 		select: {
 			id: true,
 			title: true,
@@ -14,7 +17,8 @@ export const load: PageServerLoad = async ({ locals }) => {
 					username: true
 				}
 			}
-		}
+		},
+		take: 12
 	});
 
 	return {
