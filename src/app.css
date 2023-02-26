@@ -10,6 +10,14 @@
 	.btn-secondary {
 		@apply px-4 py-2 text-sm font-semibold hover:text-sky-400;
 	}
+
+	.link {
+		@apply underline hover:text-sky-400;
+	}
+
+	.input {
+		@apply border border-indigo-500/20 focus:border-indigo-500 bg-dark rounded-md py-1 px-3 outline-none;
+	}
 }
 
 html {
