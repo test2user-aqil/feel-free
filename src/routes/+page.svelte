@@ -8,9 +8,9 @@
 	$: articles = data.articles;
 </script>
 
-<div>
-	<h1>Welcome to SvelteKit</h1>
-	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="flex flex-col items-center gap-4 py-20">
+	<img src="/logo.svg" alt="Logo" class="h-20" />
+	<p class="font-serif text-2xl">to express</p>
 </div>
 
 <div class="px-2">

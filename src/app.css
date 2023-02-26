@@ -40,3 +40,12 @@
 html {
 	@apply bg-bg text-slate-200;
 }
+
+.font-serif {
+	font-family: Chapaza, serif;
+}
+
+@font-face {
+	font-family: 'Chapaza';
+	src: url('/fonts/Chapaza.ttf');
+}
