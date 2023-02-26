@@ -9,7 +9,8 @@
 	<nav
 		class="w-full h-14 flex justify-between items-center p-3 md:px-14 bg-neutral-900 text-slate-200 border-b border-b-indigo-500"
 	>
-		<h1>
+		<h1 class="flex items-center gap-2">
+			<img src="/icon.svg" alt="Icon" />
 			<a href="/" class="font-semibold"> Feel-Free </a>
 		</h1>
 		<ul>
