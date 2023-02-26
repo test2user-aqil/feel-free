@@ -24,8 +24,12 @@
 	.registration-form input {
 		@apply input;
 	}
-	.registration-form label {
+	.registration-form label,
+	.registration-form span {
 		@apply text-xs pl-1;
+	}
+	.registration-form span {
+		@apply text-red-600 mt-1;
 	}
 
 	.input {
