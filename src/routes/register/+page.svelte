@@ -1,5 +1,6 @@
 <script lang="ts">
-	export let form;
+	import type { ActionData } from './$types';
+	export let form: ActionData;
 </script>
 
 <form method="POST" class="registration-form">
