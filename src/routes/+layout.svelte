@@ -11,7 +11,7 @@
 	>
 		<h1 class="flex items-center gap-2">
 			<img src="/icon.svg" alt="Icon" />
-			<a href="/" class="font-semibold"> Feel-Free </a>
+			<img src="/logo.svg" alt="Logo" />
 		</h1>
 		<ul>
 			<form method="POST" class="flex flex-row md:gap-4 gap-2 items-center">
