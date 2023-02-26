@@ -1,4 +1,4 @@
-import { redirect } from '@sveltejs/kit';
+import { fail, redirect } from '@sveltejs/kit';
 import type { Actions, PageServerLoad } from './$types';
 import { auth } from '$lib/server/lucia';
 import { z } from 'zod';
@@ -56,9 +56,17 @@ export const actions: Actions = {
 		const { name, username, email, password } = formData;
 
 		try {
-			const result = registerSchema.parse(formData);
-			console.log(result);
+			registerSchema.parse(formData);
+		} catch (err: any) {
+			const { fieldErrors: errors } = err.flatten();
+			const { password, passwordConfirm, ...rest } = formData;
+			return {
+				data: rest,
+				errors
+			};
+		}
 
+		try {
 			await auth.createUser({
 				key: {
 					providerId: 'username',
@@ -72,13 +80,9 @@ export const actions: Actions = {
 				}
 			});
 		} catch (err) {
-			const { fieldErrors: errors } = err.flatten();
-			const { password, passwordConfirm, ...rest } = formData;
-			return {
-				data: rest,
-				errors
-			};
+			return fail(400, { message: 'Could not register user' });
 		}
+
 		throw redirect(302, '/login');
 	}
 };
