@@ -1,22 +1,22 @@
-<form method="POST" class="max-w-md mx-auto grid gap-4 py-10">
-	<hgroup>
-		<h2 class="font-medium text-xl text-center">Register</h2>
-		<h3 class="text-sm text-center font-bold">To post articles, you'll need an account.</h3>
+<form method="POST" class="registration-form">
+	<hgroup class="text-center">
+		<h2 class="font-medium text-xl">Register</h2>
+		<h3 class="font-bold text-sm">To post articles, you'll need an account.</h3>
 	</hgroup>
 
-	<div class="grid">
+	<div>
 		<label for="name">Name</label>
-		<input type="text" id="name" name="name" class="input" required />
+		<input type="text" id="name" name="name" required />
 	</div>
 
-	<div class="grid">
+	<div>
 		<label for="username">Username</label>
-		<input type="text" id="username" name="username" class="input" required />
+		<input type="text" id="username" name="username" required />
 	</div>
 
-	<div class="grid">
+	<div>
 		<label for="password">Password</label>
-		<input type="password" id="password" name="password" class="input" required />
+		<input type="password" id="password" name="password" required />
 	</div>
 
 	<button type="submit" class="btn-primary">Register</button>
@@ -25,9 +25,3 @@
 		Already have an account? <a href="/login" class="link">Login</a>
 	</p>
 </form>
-
-<style>
-	label {
-		@apply text-xs pl-1;
-	}
-</style>
