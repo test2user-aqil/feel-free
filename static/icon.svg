@@ -31,8 +31,8 @@
      inkscape:snap-bbox="true"
      inkscape:snap-midpoints="true"
      inkscape:zoom="11.313709"
-     inkscape:cx="21.036427"
-     inkscape:cy="14.407301"
+     inkscape:cx="2.2097086"
+     inkscape:cy="14.4073"
      inkscape:window-width="1600"
      inkscape:window-height="864"
      inkscape:window-x="0"
@@ -58,17 +58,14 @@
        aria-label="f"
        id="text5568"
        style="font-size:20px;line-height:1.25" />
-    <text
-       xml:space="preserve"
-       style="font-size:18px;line-height:1.25;font-family:sans-serif"
-       x="10.6"
-       y="20.950001"
-       id="text28387"><tspan
-         sodipodi:role="line"
-         id="tspan28385"
-         x="10.6"
-         y="20.950001"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono Italic';fill:#ffffff"
-         dy="0">f</tspan></text>
+    <g
+       aria-label="f"
+       id="text28387"
+       style="font-size:18px;line-height:1.25">
+      <path
+         d="m 10.6,24.190001 0.234,-1.476 h 1.332 q 1.458,0 1.692,-1.404 l 1.278,-7.794 h -3.078 l 0.234,-1.476 h 3.078 l 0.216,-1.35 q 0.216,-1.3320002 1.152,-2.1060002 0.954,-0.774 2.412,-0.774 h 2.25 l -0.234,1.476 h -2.268 q -1.476,0 -1.692,1.4040002 l -0.216,1.35 h 3.852 l -0.234,1.476 h -3.852 l -1.278,7.794 q -0.216,1.332 -1.17,2.106 -0.936,0.774 -2.394,0.774 z"
+         style="font-style:italic;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono Italic';fill:#ffffff"
+         id="path1809" />
+    </g>
   </g>
 </svg>
