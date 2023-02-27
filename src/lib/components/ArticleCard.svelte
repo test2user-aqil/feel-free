@@ -15,7 +15,7 @@
 	class="bg-black flex flex-col justify-between h-auto rounded-xl drop-shadow-xl border border-dark-900"
 >
 	<div class="p-4">
-		<a href={`/a/${id}`} class="font-semibold text-2xl hover:text-sky-200"> {title} </a>
+		<a href={`/a/${id}`} class="font-serif font-semibold text-2xl hover:text-sky-200"> {title} </a>
 	</div>
 
 	<p class="py-2 px-4 text-sm">

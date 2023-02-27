@@ -10,7 +10,7 @@
 
 <div class="flex flex-col items-center gap-4 py-20">
 	<img src="/logo.svg" alt="Logo" class="h-20" />
-	<p class="font-serif text-2xl">to express</p>
+	<p class="font-display text-2xl">to express</p>
 </div>
 
 <div class="px-2">
