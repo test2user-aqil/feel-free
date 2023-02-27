@@ -33,7 +33,7 @@
 	}
 
 	.input {
-		@apply border border-indigo-500/20 focus:border-indigo-500 bg-dark rounded-md py-1 px-3 outline-none;
+		@apply border border-indigo-500/20 focus:border-indigo-500 bg-dark-900 rounded-md py-1 px-3 outline-none;
 	}
 }
 

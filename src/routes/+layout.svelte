@@ -7,12 +7,12 @@
 
 <div>
 	<nav
-		class="w-full h-14 flex justify-between items-center p-3 md:px-14 bg-neutral-900 text-slate-200 border-b border-b-indigo-500"
+		class="w-full h-14 flex justify-between items-center p-3 md:px-14 bg-black text-slate-200 border-b border-b-indigo-500"
 	>
-		<h1 class="flex items-center gap-2">
+		<a href="/" class="flex items-center gap-2">
 			<img src="/icon.svg" alt="Icon" />
 			<img src="/logo.svg" alt="Logo" />
-		</h1>
+		</a>
 		<ul>
 			<form method="POST" class="flex flex-row md:gap-4 gap-2 items-center">
 				{#if !data.user}

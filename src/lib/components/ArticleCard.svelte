@@ -11,7 +11,9 @@
 	formattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
 </script>
 
-<div class="bg-black flex flex-col justify-between rounded-xl shadow-lg border border-white/5">
+<div
+	class="bg-black flex flex-col justify-between h-auto rounded-xl drop-shadow-xl border border-dark-900"
+>
 	<div class="p-4">
 		<a href={`/a/${id}`} class="font-semibold text-2xl hover:text-sky-200"> {title} </a>
 	</div>
@@ -20,7 +22,7 @@
 		{description ? description : ''}
 	</p>
 
-	<div class="border-t border-white/20 py-2 px-4 flex justify-between items-center">
+	<div class="border-t border-dark-800 py-2 px-4 flex justify-between items-center">
 		<p class="text-sm">{formattedDate}</p>
 		<a href={`/u/${username}`} class="font-semibold underline hover:text-sky-300">{author}</a>
 	</div>
