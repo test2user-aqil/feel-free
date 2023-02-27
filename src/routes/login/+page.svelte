@@ -1,6 +1,6 @@
 <form method="POST" class="registration-form">
 	<hgroup class="text-center">
-		<h2 class="font-medium text-xl">Login</h2>
+		<h2 class="font-medium text-2xl my-1">Login</h2>
 		<h3 class="font-bold text-sm">Welcome back!</h3>
 	</hgroup>
 

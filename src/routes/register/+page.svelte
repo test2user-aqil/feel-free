@@ -3,9 +3,9 @@
 	export let form: ActionData;
 </script>
 
-<form method="POST" class="registration-form">
+<form method="POST" class="registration-form" autocomplete="off">
 	<hgroup class="text-center">
-		<h2 class="font-medium text-xl">Register</h2>
+		<h2 class="font-medium text-2xl my-1">Register</h2>
 		<h3 class="font-bold text-sm">To post articles, you'll need an account.</h3>
 	</hgroup>
 

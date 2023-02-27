@@ -35,7 +35,7 @@
 	}
 
 	.input {
-		@apply border border-indigo-500/20 focus:border-indigo-500 bg-dark-900 rounded-md py-1 px-3 outline-none;
+		@apply border border-dark-800 focus:border-indigo-500 bg-dark-900 rounded-md py-1 px-3 outline-none;
 	}
 }
 
@@ -46,4 +46,11 @@ html {
 @font-face {
 	font-family: 'Chapaza';
 	src: url('/fonts/Chapaza.ttf');
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-text-fill-color: rgb(16 16 16 /1);
 }
