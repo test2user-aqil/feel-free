@@ -1,6 +1,6 @@
 import type { Actions } from './$types';
 import { prisma } from '$lib/server/prisma';
-import { error, fail, redirect } from '@sveltejs/kit';
+import { fail, redirect } from '@sveltejs/kit';
 
 export const actions: Actions = {
 	createArticle: async ({ request, locals }) => {
@@ -23,13 +23,11 @@ export const actions: Actions = {
 					userId: user.userId
 				}
 			});
+
+			throw redirect(303, `/a/${id}`);
 		} catch (err) {
 			console.error(err);
 			return fail(500, { message: 'Could not create the article.' });
 		}
-
-		return {
-			status: 201
-		};
 	}
 };
