@@ -13,6 +13,14 @@
 		@apply px-4 py-2 text-sm font-semibold hover:text-sky-400;
 	}
 
+	.btn-danger {
+		@apply px-4 py-2 text-sm font-semibold text-red-400 hover:text-red-500;
+	}
+
+	.btn-danger-bordered {
+		@apply px-4 py-2 text-sm font-semibold text-red-400 hover:text-red-500 border  border-red-400 hover:border-red-500 rounded-lg;
+	}
+
 	.link {
 		@apply underline hover:text-sky-400;
 	}
