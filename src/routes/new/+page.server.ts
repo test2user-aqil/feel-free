@@ -23,11 +23,11 @@ export const actions: Actions = {
 					userId: user.userId
 				}
 			});
-
-			throw redirect(303, `/a/${id}`);
 		} catch (err) {
 			console.error(err);
 			return fail(500, { message: 'Could not create the article.' });
 		}
+
+		throw redirect(303, `/a/${id}`);
 	}
 };
