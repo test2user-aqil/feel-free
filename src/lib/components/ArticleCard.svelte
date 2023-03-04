@@ -2,10 +2,10 @@
 	import { formatRelative } from 'date-fns';
 	export let id: string;
 	export let title: string;
-	export let description: string;
+	export let description = '';
 	export let date: Date;
-	export let author: string;
-	export let username: string;
+	export let author = '';
+	export let username = '';
 
 	let formattedDate = formatRelative(date, new Date());
 	formattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);

@@ -9,8 +9,17 @@ export const load: PageServerLoad = async ({ params }) => {
 		}
 	});
 	const articles = await prisma.article.findMany({
+		orderBy: {
+			date: 'desc'
+		},
 		where: {
 			userId: user?.id
+		},
+		select: {
+			id: true,
+			title: true,
+			description: true,
+			date: true
 		}
 	});
 

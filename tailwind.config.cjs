@@ -14,7 +14,8 @@ module.exports = {
 		fontFamily: {
 			sans: ['Inter', ...defaultTheme.fontFamily.sans],
 			serif: ['Noto Serif', ...defaultTheme.fontFamily.serif],
-			display: ['Chapaza', ...defaultTheme.fontFamily.serif]
+			display: ['Chapaza', ...defaultTheme.fontFamily.serif],
+			mono: [...defaultTheme.fontFamily.mono]
 		}
 	},
 	plugins: []
