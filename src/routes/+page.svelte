@@ -8,12 +8,14 @@
 	$: articles = data.articles;
 </script>
 
-<div class="flex flex-col items-center gap-4 py-20">
-	<img src="/logo.svg" alt="Logo" class="h-20" />
-	<p class="font-display text-2xl">to express</p>
-</div>
+{#if !data.user}
+	<div class="flex flex-col items-center gap-4 py-20">
+		<img src="/logo.svg" alt="Logo" class="h-20" />
+		<p class="font-display text-2xl">to express</p>
+	</div>
+{/if}
 
-<div class="px-2">
+<div class="px-2 py-4">
 	<h2>Latest articles:</h2>
 	<div class="grid md:grid-cols-3 sm:grid-cols-2 py-2 gap-2">
 		{#each articles as article}
