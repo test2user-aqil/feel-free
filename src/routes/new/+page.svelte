@@ -1,4 +1,9 @@
-<form action="?/createArticle" method="POST" class="flex flex-col md:px-5 px-2 gap-5">
+<form
+	action="?/createArticle"
+	method="POST"
+	autocomplete="off"
+	class="flex flex-col md:px-5 px-2 gap-5"
+>
 	<h3 class="font-semibold text-2xl text-center mt-4">New Article</h3>
 
 	<div class="flex flex-col gap-3">
@@ -12,11 +17,11 @@
 				<input type="text" id="title" name="title" class="input grow" />
 			</div>
 		</div>
-		<div class="flex sm:items-center flex-col sm:flex-row sm:gap-3 gap-1">
+		<div class="flex items-stretch flex-col gap-1">
 			<label for="description"> Description </label>
-			<input type="text" id="description" name="description" class="input grow" />
+			<input type="text" id="description" name="description" class="input" />
 		</div>
-		<div class="flex items-start flex-col sm:flex-row sm:gap-3 gap-1">
+		<div class="flex items-stretch flex-col gap-1">
 			<label for="content" class="mt-1"> Content </label>
 			<textarea id="content" name="content" rows={5} class="input w-full" />
 		</div>
