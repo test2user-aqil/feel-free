@@ -1,6 +1,13 @@
-import type { Actions } from './$types';
+import type { Actions, PageServerLoad } from './$types';
 import { prisma } from '$lib/server/prisma';
 import { fail, redirect } from '@sveltejs/kit';
+
+export const load: PageServerLoad = async ({ locals }) => {
+	const session = await locals.validate();
+	if (!session) {
+		throw redirect(302, '/');
+	}
+};
 
 export const actions: Actions = {
 	createArticle: async ({ request, locals }) => {
