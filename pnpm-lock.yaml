@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@lucia-auth/adapter-prisma': ^0.4.0
+  '@lucia-auth/adapter-prisma': ^0.5.3
   '@lucia-auth/sveltekit': ^0.6.3
   '@prisma/client': ^4.10.1
   '@sveltejs/adapter-vercel': ^2.1.1
@@ -27,7 +27,7 @@ specifiers:
   zod: ^3.20.6
 
 dependencies:
-  '@lucia-auth/adapter-prisma': 0.4.0_lucia-auth@0.6.0
+  '@lucia-auth/adapter-prisma': 0.5.3_lucia-auth@0.6.0
   '@lucia-auth/sveltekit': 0.6.3_iyasqsbplmktfcni36hpxhd3zi
   '@prisma/client': 4.10.1_prisma@4.10.1
   date-fns: 2.29.3
@@ -307,10 +307,10 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@lucia-auth/adapter-prisma/0.4.0_lucia-auth@0.6.0:
-    resolution: {integrity: sha512-HMaGbVfB5KTZBs6KPqI5z6RFKVl4AKfm9u2KrrQglthpd/rWJoJRDI2oYkdcEX4Xu1FNdNJJrEtKKBtVAXYqrw==}
+  /@lucia-auth/adapter-prisma/0.5.3_lucia-auth@0.6.0:
+    resolution: {integrity: sha512-iR/NE/2pyIXXAcJ6AK0bZz4pbxoIsCqPc+QguhdyqF7b7RHmUodfQO87S0HVGHsvQsNDJkFO45IuqXTuM7Pnpg==}
     peerDependencies:
-      lucia-auth: 0.6.x
+      lucia-auth: 0.7.x - 0.8.x
     dependencies:
       lucia-auth: 0.6.0
     dev: false
