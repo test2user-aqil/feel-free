@@ -13,7 +13,7 @@ specifiers:
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
-  lucia-auth: ^0.6.0
+  lucia-auth: ^0.8.0
   postcss: ^8.4.21
   prettier: ^2.8.0
   prettier-plugin-svelte: ^2.8.1
@@ -27,11 +27,11 @@ specifiers:
   zod: ^3.20.6
 
 dependencies:
-  '@lucia-auth/adapter-prisma': 0.4.0_lucia-auth@0.6.0
-  '@lucia-auth/sveltekit': 0.6.3_iyasqsbplmktfcni36hpxhd3zi
+  '@lucia-auth/adapter-prisma': 0.4.0_lucia-auth@0.8.0
+  '@lucia-auth/sveltekit': 0.6.3_jbzxvsa4dqpgldlqvh4ov3dsay
   '@prisma/client': 4.10.1_prisma@4.10.1
   date-fns: 2.29.3
-  lucia-auth: 0.6.0
+  lucia-auth: 0.8.0
   zod: 3.20.6
 
 devDependencies:
@@ -307,22 +307,22 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@lucia-auth/adapter-prisma/0.4.0_lucia-auth@0.6.0:
+  /@lucia-auth/adapter-prisma/0.4.0_lucia-auth@0.8.0:
     resolution: {integrity: sha512-HMaGbVfB5KTZBs6KPqI5z6RFKVl4AKfm9u2KrrQglthpd/rWJoJRDI2oYkdcEX4Xu1FNdNJJrEtKKBtVAXYqrw==}
     peerDependencies:
       lucia-auth: 0.6.x
     dependencies:
-      lucia-auth: 0.6.0
+      lucia-auth: 0.8.0
     dev: false
 
-  /@lucia-auth/sveltekit/0.6.3_iyasqsbplmktfcni36hpxhd3zi:
+  /@lucia-auth/sveltekit/0.6.3_jbzxvsa4dqpgldlqvh4ov3dsay:
     resolution: {integrity: sha512-Xs0dTcmr/XtHrORAHAqvRt7KbZLokIXw/YT9HuP8zJ+9a3ARhwffr/p4JJVAzzSNI9oM8qNs/O8FdKSzbI+3/w==}
     peerDependencies:
       lucia-auth: 0.5.x - 0.6.x
       svelte: 3.x
     dependencies:
       '@noble/hashes': 1.2.0
-      lucia-auth: 0.6.0
+      lucia-auth: 0.8.0
       svelte: 3.55.1
     dev: false
 
@@ -1501,8 +1501,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /lucia-auth/0.6.0:
-    resolution: {integrity: sha512-8j5nPl3RbbqGoZWULER4q+2PP7i8F3Eq3OeN7EnL+bxi4YAn5I+5FcNq/ikUCj8neOxGZyzJiRzFJq+t3r28+g==}
+  /lucia-auth/0.8.0:
+    resolution: {integrity: sha512-YWjPntkyzGJzqNkI8EbTj3Dhs9IU1yHI7ET6K9CyCOCYAhZ6vfq0ujRPW8gVgBMqovEToO7TXM3I9p3ad1deow==}
     dependencies:
       '@noble/hashes': 1.2.0
       nanoid: 4.0.1
