@@ -38,6 +38,7 @@
 		"@prisma/client": "^4.10.1",
 		"date-fns": "^2.29.3",
 		"lucia-auth": "^0.8.0",
+		"svelte-markdown": "^0.2.3",
 		"zod": "^3.20.6"
 	}
 }
