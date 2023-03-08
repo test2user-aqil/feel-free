@@ -10,21 +10,23 @@
 	<title>{data.user?.name ? data.user?.name : data.user?.username} on Feel Free</title>
 </svelte:head>
 
-<div class="flex items-center gap-3 p-4">
-	<h2 class="font-semibold text-3xl">{data.user?.name}</h2>
-	<h3 class="font-mono text-xs bg-dark-900 p-1 rounded-md">{data.user?.username}</h3>
-</div>
+<div class="grid grid-flow-row p-3">
+	<div class="flex items-center gap-3 p-4 my-4 bg-black rounded-xl shadow-md shadow-black">
+		<h2 class="font-semibold text-3xl">{data.user?.name}</h2>
+		<h3 class="font-mono text-xs bg-dark-900 p-1 rounded-md">{data.user?.username}</h3>
+	</div>
 
-<div class="px-3">
-	<p>Articles:</p>
-	<div class="grid md:grid-cols-3 sm:grid-cols-2 py-2 gap-2">
-		{#each articles as aritcle}
-			<ArticleCard
-				title={aritcle.title}
-				id={aritcle.id}
-				date={aritcle.date}
-				description={aritcle.description}
-			/>
-		{/each}
+	<div>
+		<p>Articles:</p>
+		<div class="grid md:grid-cols-3 sm:grid-cols-2 py-2 gap-2">
+			{#each articles as aritcle}
+				<ArticleCard
+					title={aritcle.title}
+					id={aritcle.id}
+					date={aritcle.date}
+					description={aritcle.description}
+				/>
+			{/each}
+		</div>
 	</div>
 </div>
