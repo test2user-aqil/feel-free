@@ -11,9 +11,17 @@
 </svelte:head>
 
 <div class="grid grid-flow-row p-3">
-	<div class="flex items-center gap-3 p-4 my-4 bg-black rounded-xl shadow-md shadow-black">
-		<h2 class="font-semibold text-3xl">{data.user?.name}</h2>
-		<h3 class="font-mono text-xs bg-dark-900 p-1 rounded-md">{data.user?.username}</h3>
+	<div
+		class="flex justify-between items-center gap-3 p-4 my-4 bg-black rounded-xl shadow-md shadow-black"
+	>
+		<div class="flex items-center gap-3">
+			<h2 class="font-semibold text-3xl">{data.user?.name}</h2>
+			<h3 class="font-mono text-xs bg-dark-900 p-1 rounded-md">{data.user?.username}</h3>
+		</div>
+
+		{#if data.session?.userId === data.user?.id}
+			<a href={`/u/${data.user?.username}/edit`} class="btn-secondary-bg">Edit Profile</a>
+		{/if}
 	</div>
 
 	<div>
