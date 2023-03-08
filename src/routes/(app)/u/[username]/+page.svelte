@@ -6,6 +6,10 @@
 	$: ({ articles } = data);
 </script>
 
+<svelte:head>
+	<title>{data.user?.name ? data.user?.name : data.user?.username} on Feel Free</title>
+</svelte:head>
+
 <div class="flex items-center gap-3 px-2 py-4">
 	<h2 class="font-semibold text-3xl">{data.user?.name}</h2>
 	<h3 class="font-mono text-xs bg-dark-900 p-1 rounded-md">{data.user?.username}</h3>

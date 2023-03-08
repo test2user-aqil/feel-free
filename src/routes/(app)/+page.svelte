@@ -8,6 +8,14 @@
 	$: articles = data.articles;
 </script>
 
+<svelte:head>
+	{#if !data.user}
+		<title>A gateway to express something &bull; Feel Free</title>
+	{:else}
+		<title>Home &bull; Feel Free</title>
+	{/if}
+</svelte:head>
+
 {#if !data.user}
 	<div class="flex flex-col items-center gap-4 py-20">
 		<img src="/logo.svg" alt="Logo" class="h-20" />

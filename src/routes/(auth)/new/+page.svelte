@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>New article &bull; Feel Free</title>
+</svelte:head>
+
 <form
 	action="?/createArticle"
 	method="POST"

@@ -3,6 +3,10 @@
 	export let form: ActionData;
 </script>
 
+<svelte:head>
+	<title>Register &bull; Feel Free</title>
+</svelte:head>
+
 <form method="POST" class="registration-form" autocomplete="off">
 	<hgroup class="text-center">
 		<h2 class="font-medium text-2xl my-1">Register</h2>

@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Login &bull; Feel Free</title>
+</svelte:head>
+
 <form method="POST" class="registration-form">
 	<hgroup class="text-center">
 		<h2 class="font-medium text-2xl my-1">Login</h2>
