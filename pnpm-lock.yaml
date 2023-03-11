@@ -2,37 +2,37 @@ lockfileVersion: 5.4
 
 specifiers:
   '@lucia-auth/adapter-prisma': ^0.4.0
-  '@lucia-auth/sveltekit': ^0.6.9
-  '@prisma/client': ^4.11.0
-  '@sveltejs/adapter-vercel': ^2.3.1
-  '@sveltejs/kit': ^1.11.0
-  '@typescript-eslint/eslint-plugin': ^5.54.1
-  '@typescript-eslint/parser': ^5.54.1
+  '@lucia-auth/sveltekit': ^0.6.3
+  '@prisma/client': ^4.10.1
+  '@sveltejs/adapter-vercel': ^2.1.1
+  '@sveltejs/kit': ^1.5.0
+  '@typescript-eslint/eslint-plugin': ^5.45.0
+  '@typescript-eslint/parser': ^5.45.0
   autoprefixer: ^10.4.13
   date-fns: ^2.29.3
-  eslint: ^8.35.0
-  eslint-config-prettier: ^8.7.0
+  eslint: ^8.28.0
+  eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
-  lucia-auth: ^0.8.0
+  lucia-auth: ^0.6.0
   postcss: ^8.4.21
-  prettier: ^2.8.4
-  prettier-plugin-svelte: ^2.9.0
-  prisma: ^4.11.0
-  svelte: ^3.55.1
-  svelte-check: ^3.1.0
+  prettier: ^2.8.0
+  prettier-plugin-svelte: ^2.8.1
+  prisma: ^4.10.1
+  svelte: ^3.54.0
+  svelte-check: ^3.0.1
   svelte-markdown: ^0.2.3
   tailwindcss: ^3.2.7
-  tslib: ^2.5.0
-  typescript: ^4.9.5
-  vite: ^4.1.4
-  zod: ^3.21.4
+  tslib: ^2.4.1
+  typescript: ^4.9.3
+  vite: ^4.0.0
+  zod: ^3.20.6
 
 dependencies:
-  '@lucia-auth/adapter-prisma': 0.4.0_lucia-auth@0.8.0
-  '@lucia-auth/sveltekit': 0.6.9_jbzxvsa4dqpgldlqvh4ov3dsay
+  '@lucia-auth/adapter-prisma': 0.4.0_lucia-auth@0.6.2
+  '@lucia-auth/sveltekit': 0.6.9_5ahn3lncnf4h7axlbljyxj7q64
   '@prisma/client': 4.11.0_prisma@4.11.0
   date-fns: 2.29.3
-  lucia-auth: 0.8.0
+  lucia-auth: 0.6.2
   svelte-markdown: 0.2.3_svelte@3.55.1
   zod: 3.21.4
 
@@ -314,22 +314,22 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@lucia-auth/adapter-prisma/0.4.0_lucia-auth@0.8.0:
+  /@lucia-auth/adapter-prisma/0.4.0_lucia-auth@0.6.2:
     resolution: {integrity: sha512-HMaGbVfB5KTZBs6KPqI5z6RFKVl4AKfm9u2KrrQglthpd/rWJoJRDI2oYkdcEX4Xu1FNdNJJrEtKKBtVAXYqrw==}
     peerDependencies:
       lucia-auth: 0.6.x
     dependencies:
-      lucia-auth: 0.8.0
+      lucia-auth: 0.6.2
     dev: false
 
-  /@lucia-auth/sveltekit/0.6.9_jbzxvsa4dqpgldlqvh4ov3dsay:
+  /@lucia-auth/sveltekit/0.6.9_5ahn3lncnf4h7axlbljyxj7q64:
     resolution: {integrity: sha512-gc0AS0anZI25tz+tKNLIcPccBU3UWwhGhpv8ITcx983Xx9A9ipg04IQDadmYZWrsU74KSfEb3nsCP59tJDLYDg==}
     peerDependencies:
       lucia-auth: 0.5.x - 0.8.x
       svelte: 3.x
     dependencies:
       '@noble/hashes': 1.2.0
-      lucia-auth: 0.8.0
+      lucia-auth: 0.6.2
       svelte: 3.55.1
     dev: false
 
@@ -1514,8 +1514,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /lucia-auth/0.8.0:
-    resolution: {integrity: sha512-YWjPntkyzGJzqNkI8EbTj3Dhs9IU1yHI7ET6K9CyCOCYAhZ6vfq0ujRPW8gVgBMqovEToO7TXM3I9p3ad1deow==}
+  /lucia-auth/0.6.2:
+    resolution: {integrity: sha512-zePlt6YRLK48oqKd4k11kShYW7/4OEJ3LMow/zvN50rdciRh5hgkM2c2BSdaOCgaVMiJFjg1Fz7tbmFIuVriXw==}
     dependencies:
       '@noble/hashes': 1.2.0
       nanoid: 4.0.1
