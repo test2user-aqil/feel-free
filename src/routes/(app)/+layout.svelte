@@ -18,7 +18,16 @@
 					<li><a href="/login" role="button" class="btn-secondary">Login</a></li>
 					<li><a href="/register" class="btn-primary">Register</a></li>
 				{:else}
-					<li><button formaction="/logout" type="submit" class="btn-secondary"> Logout</button></li>
+					<li>
+						<button formaction="/logout" type="submit" class="btn-secondary md:flex hidden"
+							>Logout</button
+						>
+					</li>
+					<li>
+						<a href={`/u/${data.user.username}`} class="btn-secondary sm:flex hidden"
+							>Go to Profile</a
+						>
+					</li>
 					<li>
 						<a href="/new" class="btn-primary">Create New</a>
 					</li>
