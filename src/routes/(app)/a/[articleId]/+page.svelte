@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import EditButton from '$lib/components/EditButton.svelte';
 	import SvelteMarkdown from 'svelte-markdown';
 	import { formatRelative } from 'date-fns';
 
@@ -13,7 +14,12 @@
 </svelte:head>
 
 <div class="flex flex-col gap-3 p-3">
-	<h1 class="font-semibold text-3xl text-center mt-3 py-3">{article.title}</h1>
+	<h1 class="font-semibold text-3xl text-center mt-3 py-3 flex  justify-between px-4">
+		{article.title}
+		{#if data.session?.userId === data.author?.id}
+			<EditButton href={`/a/${data.article?.id}/edit`} text="Edit Article" />
+		{/if}
+	</h1>
 
 	<div class="markdown-body bg-black p-7 rounded-lg shadow-lg shadow-black">
 		<SvelteMarkdown source={article.content} />

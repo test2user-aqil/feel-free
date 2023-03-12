@@ -2,7 +2,8 @@ import type { PageServerLoad } from './$types';
 import { prisma } from '$lib/server/prisma';
 import { error } from '@sveltejs/kit';
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ locals, params }) => {
+	const session = await locals.validate();
 	const article = await prisma.article.findUnique({
 		where: {
 			id: params.articleId
@@ -18,7 +19,8 @@ export const load: PageServerLoad = async ({ params }) => {
 	if (article) {
 		return {
 			article,
-			author
+			author,
+			session
 		};
 	} else {
 		throw error(404, {
