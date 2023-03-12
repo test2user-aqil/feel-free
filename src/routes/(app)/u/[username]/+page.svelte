@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import ArticleCard from '$lib/components/ArticleCard.svelte';
+	import EditButton from '$lib/components/EditButton.svelte';
 
 	export let data: PageData;
 	$: ({ articles } = data);
@@ -20,7 +21,7 @@
 		</div>
 
 		{#if data.session?.userId === data.user?.id}
-			<a href={`/u/${data.user?.username}/edit`} class="btn-secondary-bg">Edit Profile</a>
+			<EditButton href={`/u/${data.user?.username}/edit`} text="Edit Profile" />
 		{/if}
 	</div>
 
