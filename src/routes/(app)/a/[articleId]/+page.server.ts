@@ -9,9 +9,16 @@ export const load: PageServerLoad = async ({ params }) => {
 		}
 	});
 
+	const author = await prisma.user.findUnique({
+		where: {
+			id: article?.userId
+		}
+	});
+
 	if (article) {
 		return {
-			article
+			article,
+			author
 		};
 	} else {
 		throw error(404, {

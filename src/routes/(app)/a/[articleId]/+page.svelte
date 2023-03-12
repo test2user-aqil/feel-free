@@ -21,7 +21,7 @@
 
 	<div class="flex justify-between items-center px-2">
 		<h4 class="link font-semibold">
-			<a href={`/u/${data.user?.username}`}>{data.user?.name}</a>
+			<a href={`/u/${data.author?.username}`}>{data.author?.name}</a>
 		</h4>
 		<small
 			>{formatRelative(article.date, new Date()).charAt(0).toUpperCase() +
