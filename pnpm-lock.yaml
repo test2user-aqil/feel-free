@@ -6,6 +6,7 @@ specifiers:
   '@prisma/client': ^4.11.0
   '@sveltejs/adapter-vercel': ^2.3.1
   '@sveltejs/kit': ^1.11.0
+  '@types/node': ^18.15.0
   '@typescript-eslint/eslint-plugin': ^5.54.1
   '@typescript-eslint/parser': ^5.54.1
   autoprefixer: ^10.4.14
@@ -31,6 +32,7 @@ dependencies:
   '@lucia-auth/adapter-prisma': 0.4.0_lucia-auth@0.6.2
   '@lucia-auth/sveltekit': 0.6.10_nuu25oy55lgeqsetbsy7j3cvqu
   '@prisma/client': 4.11.0_prisma@4.11.0
+  '@types/node': 18.15.0
   date-fns: 2.29.3
   lucia-auth: 0.6.2
   svelte-markdown: 0.2.3_svelte@3.56.0
@@ -54,7 +56,7 @@ devDependencies:
   tailwindcss: 3.2.7_postcss@8.4.21
   tslib: 2.5.0
   typescript: 4.9.5
-  vite: 4.1.4
+  vite: 4.1.4_@types+node@18.15.0
 
 packages:
 
@@ -461,7 +463,7 @@ packages:
       svelte: 3.56.0
       tiny-glob: 0.2.9
       undici: 5.20.0
-      vite: 4.1.4
+      vite: 4.1.4_@types+node@18.15.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -479,7 +481,7 @@ packages:
       magic-string: 0.29.0
       svelte: 3.56.0
       svelte-hmr: 0.15.1_svelte@3.56.0
-      vite: 4.1.4
+      vite: 4.1.4_@types+node@18.15.0
       vitefu: 0.2.4_vite@4.1.4
     transitivePeerDependencies:
       - supports-color
@@ -496,6 +498,9 @@ packages:
   /@types/marked/4.0.8:
     resolution: {integrity: sha512-HVNzMT5QlWCOdeuBsgXP8EZzKUf0+AXzN+sLmjvaB3ZlLqO+e4u0uXrdw9ub69wBKFs+c6/pA4r9sy6cCDvImw==}
     dev: false
+
+  /@types/node/18.15.0:
+    resolution: {integrity: sha512-z6nr0TTEOBGkzLGmbypWOGnpSpSIBorEhC4L+4HeQ2iezKCi4f77kyslRwvHeNitymGQ+oFyIWGP96l/DPSV9w==}
 
   /@types/pug/2.0.6:
     resolution: {integrity: sha512-SnHmG9wN1UVmagJOnyo/qkk0Z7gejYxOYYmaAwr5u2yFYfsupN3sg10kyzN8Hep/2zbHxCnsumxOoRIRMBwKCg==}
@@ -2381,7 +2386,7 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite/4.1.4:
+  /vite/4.1.4_@types+node@18.15.0:
     resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2406,6 +2411,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.15.0
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
@@ -2422,7 +2428,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.1.4
+      vite: 4.1.4_@types+node@18.15.0
     dev: true
 
   /webidl-conversions/3.0.1:
