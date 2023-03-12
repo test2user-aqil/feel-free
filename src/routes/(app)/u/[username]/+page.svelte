@@ -25,16 +25,18 @@
 	</div>
 
 	<div>
-		<p>Articles:</p>
-		<div class="grid md:grid-cols-3 sm:grid-cols-2 py-2 gap-2">
-			{#each articles as aritcle}
-				<ArticleCard
-					title={aritcle.title}
-					id={aritcle.id}
-					date={aritcle.date}
-					description={aritcle.description}
-				/>
-			{/each}
-		</div>
+		{#if articles}
+			<p>Articles:</p>
+			<div class="grid md:grid-cols-3 sm:grid-cols-2 py-2 gap-2">
+				{#each articles as aritcle}
+					<ArticleCard
+						title={aritcle.title}
+						id={aritcle.id}
+						date={aritcle.date}
+						description={aritcle.description}
+					/>
+				{/each}
+			</div>
+		{/if}
 	</div>
 </div>

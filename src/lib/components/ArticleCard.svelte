@@ -2,7 +2,7 @@
 	import { formatRelative } from 'date-fns';
 	export let id: string;
 	export let title: string;
-	export let description = '';
+	export let description: string | null = '';
 	export let date: Date;
 	export let author = '';
 	export let username = '';

@@ -24,17 +24,19 @@
 {/if}
 
 <div class="px-3 py-4">
-	<h2>Latest articles:</h2>
-	<div class="grid md:grid-cols-3 sm:grid-cols-2 py-2 gap-2">
-		{#each articles as article}
-			<ArticleCard
-				author={article.User.name}
-				username={article.User.username}
-				id={article.id}
-				title={article.title}
-				description={article.description}
-				date={article.date}
-			/>
-		{/each}
-	</div>
+	{#if articles}
+		<h2>Latest articles:</h2>
+		<div class="grid md:grid-cols-3 sm:grid-cols-2 py-2 gap-2">
+			{#each articles as article}
+				<ArticleCard
+					author={article.User.name}
+					username={article.User.username}
+					id={article.id}
+					title={article.title}
+					description={article.description}
+					date={article.date}
+				/>
+			{/each}
+		</div>
+	{/if}
 </div>
